@@ -2,7 +2,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 480px;
+  height: 570px;
+  margin: 0 auto;
 }
 
 .question__title-block {
@@ -10,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  padding: 0 20px;
 }
 
 .question__title {
@@ -31,12 +34,14 @@
 }
 
 .question__background {
-  width: 480px;
+  position: absolute;
+  top: 100px;
+  width: 100%;
   background-color: var(--bgcolor-b);
   color: var(--bgcolor-w);
   box-sizing: border-box;
   padding: 30px 20px;
-  margin: 0 -20px;
+  margin: 0 auto;
   border-radius: 15px;
 }
 
@@ -283,12 +288,12 @@
 }
 
 .stage {
-  width: 480px;
+  max-width: 480px;
   background-color: var(--bgcolor-b);
   color: var(--bgcolor-w);
   box-sizing: border-box;
   padding: 20px;
-  margin: 0 -20px;
+  margin: 0 auto;
 }
 
 .stage__title {

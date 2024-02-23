@@ -4,16 +4,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 100px 0px 150px 0px;
+  padding: 100px 20px 150px 20px;
 }
 
 .background {
   position: absolute;
   background-color: var(--bgcolor-b);
-  top: -0;
-  width: 480px;
+  top: 0;
+  width: 100%;
   height: 100%;
 }
 
@@ -32,6 +32,7 @@
   position: absolute;
   top: 10px;
   left: 0;
+  width: 98%;
   z-index: 1;
 }
 
@@ -39,7 +40,8 @@
   margin-bottom: 5px;
   color: var(--bgcolor-w);
   z-index: 3;
-  font-size: 34px;
+  font-size: 33px;
+  text-align: center;
 }
 
 .hero__text {
@@ -147,7 +149,7 @@
 .reviews {
   position: relative;
   overflow: hidden;
-  width: 480px;
+  max-width: 480px;
   height: 240px;
   margin: 0 -20px;
 }
@@ -169,29 +171,29 @@
   background-color: var(--bgcolor-b);
   color: var(--bgcolor-w);
   box-shadow: 0px 10px 24px 0px rgba(1, 43, 69, 1);
-  width: 270px;
+  width: 230px;
 }
 
 .pre-block {
   position: absolute;
-  top: 35%;
-  left: -46%;
+  top: 30%;
+  left: -50%;
   background-color: var(--bgcolor-w);
   color: var(--bgcolor-b);
   box-shadow: 0px 10px 34px 0px rgba(1, 43, 69, 1);
   width: 300px;
-  transform: scale(0.8);
+  transform: scale(0.75);
 }
 
 .after-block {
   position: absolute;
-  top: 35%;
-  right: -46%;
+  top: 30%;
+  right: -50%;
   background-color: var(--bgcolor-w);
   color: var(--bgcolor-b);
   box-shadow: 0px 10px 34px 0px rgba(1, 43, 69, 1);
   width: 300px;
-  transform: scale(0.8);
+  transform: scale(0.75);
 }
 
 .reviews__block div {

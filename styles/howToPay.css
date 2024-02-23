@@ -8,10 +8,11 @@
 }
 
 .pay__btn {
-  width: 480px;
+  max-width: 480px;
+  width: 100%;
   background-color: var(--text-color-bl);
   color: var(--bgcolor-w);
-  margin: 0 -20px;
+  margin: 0 auto;
   margin-bottom: 15px;
   padding: 15px;
   font-size: 18px;

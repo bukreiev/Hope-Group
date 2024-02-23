@@ -30,13 +30,13 @@
 
 .invest-hero {
   position: relative;
-  width: 480px;
+  max-width: 480px;
   height: 320px;
   background-color: var(--bgcolor-b);
   color: var(--bgcolor-w);
   box-sizing: border-box;
   padding: 20px;
-  margin: 0 -20px;
+  margin: 0 auto;
 }
 
 .invest-hero div {
@@ -49,7 +49,7 @@
 .bid-block {
   position: absolute;
   top: 35px;
-  left: 90px;
+  left: 60px;
   width: 70px;
   height: 70px;
   background: rgb(0, 0, 0);
@@ -73,7 +73,7 @@
 .period-block {
   position: absolute;
   top: 45px;
-  left: 190px;
+  left: 160px;
   width: 200px;
   height: 110px;
   background-color: rgba(255, 255, 255, 0.4);
@@ -107,7 +107,7 @@
 .diagram-block {
   position: absolute;
   top: 135px;
-  left: 60px;
+  left: 30px;
   width: 170px;
   height: 120px;
   background-color: rgba(117, 117, 117, 0.5);
@@ -120,7 +120,7 @@
 .sum-block {
   position: absolute;
   top: 185px;
-  left: 260px;
+  left: 230px;
 
   width: 120px;
   height: 80px;
