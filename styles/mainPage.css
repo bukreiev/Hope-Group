@@ -54,8 +54,6 @@
 }
 
 .hero__button {
-  padding: 0;
-  margin-bottom: 15px;
   color: var(--bgcolor-w);
   background-color: rgba(255, 255, 255, 0.2);
   width: 200px;
@@ -64,8 +62,17 @@
   border-radius: 5px;
   font-size: 18px;
   font-weight: 700;
+  padding: 0;
+  margin-bottom: 15px;
+  padding: 5px;
 }
-
+.hero__button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
 .hero__button:last-child {
   margin-bottom: 0;
   background-color: var(--bgcolor-w);
