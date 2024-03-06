@@ -1,8 +1,8 @@
 .auth {
   display: block;
-  padding: 0;
-  width: 100%;
-  outline: 2px dotted black;
+  padding: 50px 0;
+  max-width: 480px;
+  margin: 0 auto;
 }
 .auth__title {
   font-weight: 600;
@@ -139,4 +139,10 @@
 
 .checkbox__text {
   font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .form__bank input {
+    max-width: 235px;
+  }
 }

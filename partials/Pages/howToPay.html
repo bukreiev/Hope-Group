@@ -32,17 +32,27 @@
             <span class="burger__line"></span>
           </button>
         </div>
+        <nav>
+          <ul class="nav__list">
+            <li><a href="../../investPage.html">Invest</a></li>
+            <li><a href="../../creditPage.html">Credit</a></li>
+            <li><a href="./creditTerms.html">Support</a></li>
+            <li><a href="./aboutUs.html">About</a></li>
+            <li><a href="/partials/LoginMobile/mainLogin.html">Sign up</a></li>
+            <li>
+              <a class="signup" href="/partials/LoginMobile/mainLogin.html"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
       <section class="pay">
-        <div class="wrapper main">
-          <h2 class="pay__title">
-            Як сплатити кредит в <span>HopeGroup?</span>
-          </h2>
-        </div>
+        <h2 class="pay__title">Як сплатити кредит в <span>HopeGroup?</span></h2>
         <button class="pay__btn">Сплатити без авторизації</button>
-        <div class="wrapper main">
+        <div class="pay__container">
           <ul class="pay__list">
             <li>
               <div class="pay__list-block pay--active">
@@ -50,7 +60,11 @@
                   Через особистий кабінет
                 </h3>
                 <button class="pay__list-btn">
-                  <svg class="pay__icon" width="15px" height="15px">
+                  <svg
+                    class="pay__icon pay__icon-active"
+                    width="15px"
+                    height="15px"
+                  >
                     <use xlink:href="../../assets/icons.svg#line"></use>
                   </svg>
                 </button>
@@ -83,18 +97,34 @@
                 <h3 class="pay__list-title">За реквізитами</h3>
                 <button class="pay__list-btn">
                   <svg class="pay__icon" width="15px" height="15px">
-                    <use xlink:href="./assets/icons.svg#line"></use>
+                    <use xlink:href="../../assets/icons.svg#line"></use>
                   </svg>
                 </button>
               </div>
             </li>
           </ul>
+          <div class="text__container">
+            <h3 class="pay__text-title">
+              Оплата банківською картою в особистому кабінеті
+            </h3>
+            <p class="pay__list-text-desktop">
+              Внести кошти для погашення кредиту можна на головній сторінці
+              Сайту, через особистий кабінет на Сайті, Приват24, мережу
+              платіжних терміналів Приват банку, Easy Pay, City24, 2Click та
+              банківським переказом в будь-якому банку України.
+            </p>
+            <p class="pay__list-text-desktop">
+              Важливо! Будь ласка, зверніть увагу на те, що банківський переказ
+              може надходити протягом 3-х робочих днів. За період надходження
+              платежу, на жаль, нарахування процентів не зупиняється.
+            </p>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="wrapper bottom">
-        <div class="container">
+      <div class="wrapper-bottom">
+        <div class="container footer__logo">
           <a class="logo" href="/">
             <img
               src="../../assets/Logo-white.png"
@@ -108,109 +138,144 @@
             <li>
               <a class="social__link" href="/">
                 <svg class="social__icon" width="43" height="29">
-                  <use href="../..//assets/icons.svg#telegram"></use>
+                  <use href="../../assets/icons.svg#telegram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social__link" href="/">
                 <svg class="social__icon" width="43" height="29">
-                  <use href="../..//assets/icons.svg#instagram"></use>
+                  <use href="../../assets/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social__link" href="/">
                 <svg class="social__icon" width="43" height="29">
-                  <use href="../..//assets/icons.svg#youtube"></use>
+                  <use href="../../assets/icons.svg#youtube"></use>
                 </svg>
               </a>
             </li>
           </ul>
+          <ul class="help">
+            <li>
+              <a href="" class="help__link">Скарга? Вам сюди!</a>
+            </li>
+            <li><a href="" class="help__link">Повідомити про шахрайство</a></li>
+            <li>
+              <a href="" class="help__link">Бракує грошей на оплату кредиту</a>
+            </li>
+          </ul>
         </div>
-        <ul class="help">
-          <li>
-            <a href="" class="help__link">Жалоба? Вам сюда!</a>
-          </li>
-          <li><a href="" class="help__link">Сообщить о мошенничестве</a></li>
-          <li>
-            <a href="" class="help__link">Не хватает денег на оплату кредита</a>
-          </li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Вопросы</h3>
-          <button class="container__button">
-            <img
-              src="../..//assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Питання</h3>
+            <button class="container__button">
+              <img
+                src="../../assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li><a class="container__link" href="/">Часто задаваемые</a></li>
+            <li><a class="container__link" href="/">Тарифи</a></li>
+            <li><a class="container__link" href="/">Акції</a></li>
+            <li><a class="container__link" href="/">Підтримка</a></li>
+            <li><a class="container__link" href="/">Відгуки клієнтів</a></li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li><a class="container__link" href="/">Часто задаваемые</a></li>
-          <li><a class="container__link" href="/">Тарифы</a></li>
-          <li><a class="container__link" href="/">Акции</a></li>
-          <li><a class="container__link" href="/">Поддержка</a></li>
-          <li><a class="container__link" href="/">Отзывы клиентов</a></li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Контакты</h3>
-          <button class="container__button">
-            <img
-              src="../..//assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Контакти</h3>
+            <button class="container__button">
+              <img
+                src="../../assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li>
+              <a
+                class="container__link container-contact"
+                href="tel:08008675637"
+                >0 800 867 56 37</a
+              >
+              <p class="container__text">
+                Фахівці нашого колл-центру готові допомогти вам з 6:00 до 20:00
+              </p>
+            </li>
+            <li>
+              <a
+                class="container__link container-contact"
+                href="mailto:info@hope.group"
+                >info@hope.group</a
+              >
+            </li>
+            <li>
+              <ul class="social-desktop">
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="../../assets/icons.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="../../assets/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="../../assets/icons.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="container__adress-title">Адреса</p>
+              <p class="container__adress">
+                00601, г. Київ, вул. Твоеймамы, 66, офис 000
+              </p>
+            </li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li>
-            <a class="container__link" href="tel:08008675637"
-              >0 800 867 56 37</a
-            >
-            <p class="container__text">
-              Специалисты нашего колл-центра готовы помочь вам с с 6:00 до 20:00
-            </p>
-          </li>
-          <li>
-            <a class="container__link" href="mailto:info@hope.group"
-              >info@hope.group</a
-            >
-          </li>
-          <li>
-            <p class="container__text">Адрес</p>
-            <p class="container__text">
-              00601, г. Киев, Улица Твоеймамы, 66, офис 000
-            </p>
-          </li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Документация</h3>
-          <button class="container__button">
-            <img
-              src="../..//assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Документація</h3>
+            <button class="container__button">
+              <img
+                src="../../assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li><a class="container__link" href="/">Умови договору</a></li>
+            <li>
+              <a class="container__link" href="/"
+                >Політика конфіденційності персональних даних</a
+              >
+            </li>
+            <li>
+              <a class="container__link" href="/">Умови реструктуризації</a>
+            </li>
+            <li><a class="container__link" href="/">Зразки заяв</a></li>
+            <li><a class="container__link" href="/">Реквізити</a></li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li><a class="container__link" href="/">Условия договора</a></li>
-          <li>
-            <a class="container__link" href="/"
-              >Политика конфиденциальности персональных данных</a
-            >
-          </li>
-          <li>
-            <a class="container__link" href="/">Условия реструктуризации</a>
-          </li>
-          <li><a class="container__link" href="/">Образцы заявлений</a></li>
-          <li><a class="container__link" href="/">Реквизиты</a></li>
-        </ul>
       </div>
     </footer>
   </body>

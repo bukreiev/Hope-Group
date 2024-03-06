@@ -32,48 +32,74 @@
             <span class="burger__line"></span>
           </button>
         </div>
+        <nav>
+          <ul class="nav__list">
+            <li><a href="/investPage.html">Invest</a></li>
+            <li><a href="/creditPage.html">Credit</a></li>
+            <li><a href="/partials/Pages/creditTerms.html">Support</a></li>
+            <li><a href="/partials/Pages/aboutUs.html">About</a></li>
+            <li><a href="/partials/LoginMobile/mainLogin.html">Sign up</a></li>
+            <li>
+              <a class="signup" href="/partials/LoginMobile/mainLogin.html"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
-      <div class="wrapper main">
-        <section class="calculate">
-          <h2 class="calculate__title">Расчет займа</h2>
-          <div class="slidecontainer">
-            <div>
-              <p class="slide__label">Сумма</p>
-              <p class="slide__sum">50 000₴</p>
-            </div>
-            <input type="range" min="1" max="100" value="20" class="slider" />
-            <div class="div">
-              <p class="amount">0₴</p>
-              <p class="amount">100 000₴</p>
-            </div>
+      <section class="calculate calculate-credit">
+        <div class="calculate-desktop">
+          <div class="credit">
+            <h1 class="credit__title">Кредитування</h1>
+            <p class="credit__text">
+              Кредити для ваших цілей швидко та вигідно
+            </p>
+            <a class="credit__link">Детальніше про умови</a>
           </div>
-          <div class="slidecontainer">
-            <div>
-              <p class="slide__label">Период</p>
-              <p class="slide__sum">3 000₴</p>
+          <div class="calculate__programm calculate__programm-credit">
+            <h2 class="calculate__title">Розрахунок позики</h2>
+            <h2 class="calculate__title calculate__title-credit">
+              Перша позика під 0%
+            </h2>
+            <div class="slidecontainer">
+              <div>
+                <p class="slide__label">Сума</p>
+                <p class="slide__sum">50 000₴</p>
+              </div>
+              <input type="range" min="1" max="100" value="20" class="slider" />
+              <div class="div">
+                <p class="amount">0₴</p>
+                <p class="amount">100 000₴</p>
+              </div>
             </div>
-            <input type="range" min="1" max="100" value="20" class="slider" />
-            <div class="div">
-              <p class="amount">10 дней</p>
-              <p class="amount">24 недели</p>
+            <div class="slidecontainer">
+              <div>
+                <p class="slide__label">Період</p>
+                <p class="slide__sum">3 000₴</p>
+              </div>
+              <input type="range" min="1" max="100" value="20" class="slider" />
+              <div class="div">
+                <p class="amount">10 дней</p>
+                <p class="amount">24 недели</p>
+              </div>
             </div>
-          </div>
-          <div class="calculate__result">
-            <p class="result__label">Вы возвращаете:</p>
-            <p class="result__label">До(включительно):</p>
+            <div class="calculate__result">
+              <p class="result__label">Вы повертаєте:</p>
+              <p class="result__label">До(включно):</p>
 
-            <p class="result__amount">10 000</p>
-            <p class="result__amount">16/01/2024</p>
+              <p class="result__amount">10 000</p>
+              <p class="result__amount">16/01/2024</p>
+            </div>
+            <button class="calculate__btn calculate__btn-credit">
+              Отримати гроші
+            </button>
           </div>
-          <button class="calculate__btn">Получить деньги</button>
-        </section>
-      </div>
+        </div>
+      </section>
       <section class="stage">
-        <h2 class="stage__title">
-          Получить и оплатить займ <br /><span>просто</span>
-        </h2>
+        <h2 class="stage__title">Взяти кредит <span>просто</span></h2>
         <ul class="stage__list">
           <li>
             <h3 class="stage__list-title">Оформите заявку</h3>
@@ -104,120 +130,261 @@
             </p>
           </li>
         </ul>
+        <ul class="stage__list-desktop">
+          <li>
+            <p class="stage__step">1</p>
+            <h3 class="stage__list-time">24 часа</h3>
+            <p class="stage__list-text">Оформите заявку</p>
+          </li>
+          <img
+            src="./assets/arrow-right.png"
+            alt="arrow-right"
+            width="50px"
+            height="20"
+          />
+          <li>
+            <p class="stage__step">2</p>
+            <h3 class="stage__list-time">24 часа</h3>
+            <p class="stage__list-text">Дождитесь решения</p>
+          </li>
+          <img
+            src="./assets/arrow-right.png"
+            alt="arrow-right"
+            width="50px"
+            height="20"
+          />
+          <li>
+            <p class="stage__step">3</p>
+            <h3 class="stage__list-time">24 часа</h3>
+            <p class="stage__list-text">Получите деньги</p>
+          </li>
+        </ul>
       </section>
-      <div class="wrapper main">
-        <section class="condition">
-          <h2 class="condition__title">Требования к инвестору</h2>
-          <ul class="condition__list">
-            <span class="condition__line"></span>
-            <li>
+      <section class="condition">
+        <h2 class="condition__title">Требования к инвестору</h2>
+        <ul class="condition__list">
+          <span class="condition__line"></span>
+          <li>
+            <img
+              src="./assets/checkbox.png"
+              alt="checkbox"
+              width="30"
+              height="30"
+            />
+            <p class="condition__text">Возраст от 18 лет</p>
+          </li>
+          <li>
+            <img
+              src="./assets/checkbox.png"
+              alt="checkbox"
+              width="30"
+              height="30"
+            />
+            <p class="condition__text">Паспорт гражданина</p>
+          </li>
+          <li>
+            <img
+              src="./assets/checkbox.png"
+              alt="checkbox"
+              width="30"
+              height="30"
+            />
+            <p class="condition__text">Банковская карта</p>
+          </li>
+          <li>
+            <img
+              src="./assets/checkbox.png"
+              alt="checkbox"
+              width="30"
+              height="30"
+            />
+            <p class="condition__text">Мобильный телефон</p>
+          </li>
+        </ul>
+      </section>
+      <section class="excellence">
+        <img
+          class="excellence__background"
+          src="./assets/grafik-bg.png"
+          alt="excellence__background"
+        />
+
+        <h2 class="excellence__title">Наші переваги</h2>
+        <ul class="excellence__list">
+          <li>
+            <img
+              src="./assets/speed-icon.png"
+              alt="excellence-icon"
+              width="30"
+              height="30"
+            />
+            <p class="excellence__label">Швидкість:</p>
+            <p class="excellence__text">
+              Відповімо на ваш запит протягом 1 години та обробимо заявку в
+              протягом 24 годин.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/proccent-icon.png"
+              alt="excellence-icon"
+              width="30"
+              height="30"
+            />
+            <p class="excellence__label">Високий відсоток:</p>
+            <p class="excellence__text">
+              Мы пропонуємо відсотки вище, ніж у більшості банків.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/shield-icon.png"
+              alt="excellence-icon"
+              width="30"
+              height="30"
+            />
+            <p class="excellence__label">Безпека:</p>
+            <p class="excellence__text">
+              Ми дотримуємось суворих нормативних вимог і використовуємо
+              передові технології захисту ваших інвестицій.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/diagram-icon.png"
+              alt="excellence-icon"
+              width="30"
+              height="30"
+            />
+            <p class="excellence__label">Простота:</p>
+            <p class="excellence__text">
+              Ми спрощуємо процес інвестування, щоб ви могли отримувати прибуток
+              без зайвих зусиль.
+            </p>
+          </li>
+        </ul>
+        <ul class="excellence__list-desktop">
+          <li>
+            <img
+              src="./assets/speed-icon.png"
+              alt="excellence-icon"
+              width="55"
+              height="55"
+            />
+            <p class="excellence__label">Скорость:</p>
+            <p class="excellence__text">
+              Ответим на ваш запрос в течение 1 часа и обработаем заявку в
+              течение 24 часов.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/proccent-icon.png"
+              alt="excellence-icon"
+              width="55"
+              height="55"
+            />
+            <p class="excellence__label">Высокий процент:</p>
+            <p class="excellence__text">
+              Мы предлагаем проценты выше, чем в большинстве банков.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/shield-icon.png"
+              alt="excellence-icon"
+              width="55"
+              height="55"
+            />
+            <p class="excellence__label">Безопасность:</p>
+            <p class="excellence__text">
+              Мы соблюдаем строгие нормативные требования и используем передовые
+              технологии для защиты ваших инвестиций.
+            </p>
+          </li>
+          <li>
+            <img
+              src="./assets/diagram-icon.png"
+              alt="excellence-icon"
+              width="55"
+              height="55"
+            />
+            <p class="excellence__label">Простота:</p>
+            <p class="excellence__text">
+              Мы упрощаем процесс инвестирования, чтобы вы могли получать
+              прибыль без лишних усилий.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="condition-desktop">
+        <img
+          class="person"
+          src="./assets/person.png"
+          alt="person"
+          width="525"
+          height="350"
+        />
+        <h2 class="condition__title">Вимоги до кредитора</h2>
+        <ul class="condition__list">
+          <li>
+            <p class="condition__img">
               <img
-                src="./assets/checkbox.png"
+                src="./assets/Checked.png"
                 alt="checkbox"
                 width="30"
                 height="30"
               />
-              <p class="condition__text">Возраст от 18 лет</p>
-            </li>
-            <li>
+            </p>
+            <p class="condition__text">Вік від 18 років</p>
+          </li>
+          <li>
+            <p class="condition__img">
               <img
-                src="./assets/checkbox.png"
+                src="./assets/Checked.png"
                 alt="checkbox"
                 width="30"
                 height="30"
               />
-              <p class="condition__text">Паспорт гражданина</p>
-            </li>
-            <li>
+            </p>
+            <p class="condition__text">Паспорт громадянина</p>
+          </li>
+          <li>
+            <p class="condition__img">
               <img
-                src="./assets/checkbox.png"
+                src="./assets/Checked.png"
                 alt="checkbox"
                 width="30"
                 height="30"
               />
-              <p class="condition__text">Банковская карта</p>
-            </li>
-            <li>
+            </p>
+            <p class="condition__text">Банківська картка</p>
+          </li>
+          <li>
+            <p class="condition__img">
               <img
-                src="./assets/checkbox.png"
+                src="./assets/Checked.png"
                 alt="checkbox"
                 width="30"
                 height="30"
               />
-              <p class="condition__text">Мобильный телефон</p>
-            </li>
-          </ul>
-        </section>
-        <section class="excellence">
-          <h2 class="excellence__title">Наши преимущества</h2>
-          <ul class="excellence__list">
-            <li>
-              <img
-                src="./assets/speed-icon.png"
-                alt="excellence-icon"
-                width="30"
-                height="30"
-              />
-              <p class="excellence__label">Скорость:</p>
-              <p class="excellence__text">
-                Ответим на ваш запрос в течение 1 часа и обработаем заявку в
-                течение 24 часов.
-              </p>
-            </li>
-            <li>
-              <img
-                src="./assets/proccent-icon.png"
-                alt="excellence-icon"
-                width="30"
-                height="30"
-              />
-              <p class="excellence__label">Высокий процент:</p>
-              <p class="excellence__text">
-                Мы предлагаем проценты выше, чем в большинстве банков.
-              </p>
-            </li>
-            <li>
-              <img
-                src="./assets/shield-icon.png"
-                alt="excellence-icon"
-                width="30"
-                height="30"
-              />
-              <p class="excellence__label">Безопасность:</p>
-              <p class="excellence__text">
-                Мы соблюдаем строгие нормативные требования и используем
-                передовые технологии для защиты ваших инвестиций.
-              </p>
-            </li>
-            <li>
-              <img
-                src="./assets/diagram-icon.png"
-                alt="excellence-icon"
-                width="30"
-                height="30"
-              />
-              <p class="excellence__label">Простота:</p>
-              <p class="excellence__text">
-                Мы упрощаем процесс инвестирования, чтобы вы могли получать
-                прибыль без лишних усилий.
-              </p>
-            </li>
-          </ul>
-        </section>
-      </div>
+            </p>
+            <p class="condition__text">Мобільний телефон</p>
+          </li>
+        </ul>
+      </section>
       <section class="question">
         <div class="question__title-block">
-          <h2 class="question__title">
-            Что Вам будет <br />
-            интересно
-          </h2>
+          <h2 class="question__title">Що вам буде цікаво</h2>
           <p class="question__image">?</p>
         </div>
         <div class="question__background">
           <ul class="question__list">
-            <li>
+            <li class="item1">
               <div class="question__list-block question--active">
-                <h3 class="question__list-title">Как правильно топить котят</h3>
+                <h3 class="question__list-title">
+                  Як правильно топити кошенят
+                </h3>
                 <button class="question__list-btn">
                   <svg
                     class="question__icon question__icon--active"
@@ -229,15 +396,17 @@
                 </button>
               </div>
               <p class="question__list-text">
-                Кредиты - это удобно, ведь они позволяют нам получить желаемое,
-                не дожидаясь, пока мы накопим на это нужную сумму. Но не стоит
-                забывать, что кредит - это не подарок, а долг, который нужно
-                вернуть. И если не рассчитать свои силы...
+                Кредити – це зручно, адже вони дозволяють нам отримати бажане,
+                не чекаючи, поки ми назбираємо на це потрібну суму. Але не варто
+                забувати, що кредит - це подарунок, а борг, який потрібно
+                повернути. І якщо не розрахувати свої сили...
               </p>
             </li>
-            <li>
+            <li class="item2">
               <div class="question__list-block">
-                <h3 class="question__list-title">Как правильно топить котят</h3>
+                <h3 class="question__list-title">
+                  Як правильно топити кошенят
+                </h3>
                 <button class="question__list-btn">
                   <svg class="question__icon" width="15px" height="15px">
                     <use xlink:href="./assets/icons.svg#line"></use>
@@ -245,9 +414,11 @@
                 </button>
               </div>
             </li>
-            <li>
+            <li class="item3">
               <div class="question__list-block">
-                <h3 class="question__list-title">Как правильно топить котят</h3>
+                <h3 class="question__list-title">
+                  Як правильно топити кошенят
+                </h3>
                 <button class="question__list-btn">
                   <svg class="question__icon" width="15px" height="15px">
                     <use xlink:href="./assets/icons.svg#line"></use>
@@ -255,9 +426,11 @@
                 </button>
               </div>
             </li>
-            <li>
+            <li class="item4">
               <div class="question__list-block">
-                <h3 class="question__list-title">Как правильно топить котят</h3>
+                <h3 class="question__list-title">
+                  Як правильно топити кошенят
+                </h3>
                 <button class="question__list-btn">
                   <svg class="question__icon" width="15px" height="15px">
                     <use xlink:href="./assets/icons.svg#line"></use>
@@ -265,9 +438,11 @@
                 </button>
               </div>
             </li>
-            <li>
+            <li class="item5">
               <div class="question__list-block">
-                <h3 class="question__list-title">Как правильно топить котят</h3>
+                <h3 class="question__list-title">
+                  Як правильно топити кошенят
+                </h3>
                 <button class="question__list-btn">
                   <svg class="question__icon" width="15px" height="15px">
                     <use xlink:href="./assets/icons.svg#line"></use>
@@ -278,9 +453,9 @@
           </ul>
         </div>
       </section>
-      <div class="wrapper main">
-        <section class="tarifs">
-          <h2 class="tarifs__title">Тарифы</h2>
+      <section class="tarifs">
+        <h2 class="tarifs__title">Тарифи</h2>
+        <div class="tarifs__container">
           <div class="tarifs__block">
             <img
               src="./assets/tarifs-img.png"
@@ -291,8 +466,8 @@
             <h3 class="tarifs__block-title">до 50 000</h3>
             <p class="tarifs__bid">14,5%</p>
             <p class="tarifs__name">Середнячок</p>
-            <button class="tarifs__btn">Получить деньги</button>
-            <button class="tarifs__btn-details">Подробнее</button>
+            <button class="tarifs__btn">Отримати гроші</button>
+            <button class="tarifs__btn-details">Детальніше</button>
           </div>
           <div class="tarifs__block card-open">
             <h3 class="tarifs__block-title">до 50 000</h3>
@@ -308,7 +483,7 @@
                     height="30"
                   />
                 </div>
-                <p class="tarifs__text">до 50 000 грн. на карту</p>
+                <p class="tarifs__text">до 50 000 грн. на картку</p>
               </li>
               <li>
                 <div>
@@ -319,7 +494,7 @@
                     height="30"
                   />
                 </div>
-                <p class="tarifs__text">Период займа от 10 до 30 дней</p>
+                <p class="tarifs__text">Період позики від 10 до 30 днів</p>
               </li>
               <li>
                 <div>
@@ -341,23 +516,36 @@
                     height="30"
                   />
                 </div>
-                <p class="tarifs__text">Проценты в расстрочку</p>
+                <p class="tarifs__text">Відсотки в розстрочку</p>
               </li>
             </ul>
-            <button class="tarifs__btn">Инвестировать</button>
+            <button class="tarifs__btn">Оформити заявку</button>
           </div>
-
-          <div class="tarifs__pagination">
-            <span class="point"></span>
-            <span class="point active-point"></span>
-            <span class="point"></span>
+          <div class="tarifs__block card-open">
+            <img
+              src="./assets/tarifs-img.png"
+              alt="tarifs-img"
+              width="200"
+              height="200"
+            />
+            <h3 class="tarifs__block-title">від 100 000</h3>
+            <p class="tarifs__bid">15%</p>
+            <p class="tarifs__name">Большечок</p>
+            <button class="tarifs__btn">Інвестувати</button>
+            <button class="tarifs__btn-details">Детальніше</button>
           </div>
-        </section>
-      </div>
+        </div>
+        <div class="tarifs__pagination">
+          <span class="point"></span>
+          <span class="point active-point"></span>
+          <span class="point"></span>
+        </div>
+        <button class="tarifs__btn tarifs__btn-main">Инвестировать</button>
+      </section>
     </main>
     <footer>
-      <div class="wrapper bottom">
-        <div class="container">
+      <div class="wrapper-bottom">
+        <div class="container footer__logo">
           <a class="logo" href="/">
             <img
               src="assets/Logo-white.png"
@@ -390,90 +578,128 @@
               </a>
             </li>
           </ul>
+          <ul class="help">
+            <li>
+              <a href="" class="help__link">Жалоба? Вам сюда!</a>
+            </li>
+            <li><a href="" class="help__link">Сообщить о мошенничестве</a></li>
+            <li>
+              <a href="" class="help__link"
+                >Не хватает денег на оплату кредита</a
+              >
+            </li>
+          </ul>
         </div>
-        <ul class="help">
-          <li>
-            <a href="" class="help__link">Жалоба? Вам сюда!</a>
-          </li>
-          <li><a href="" class="help__link">Сообщить о мошенничестве</a></li>
-          <li>
-            <a href="" class="help__link">Не хватает денег на оплату кредита</a>
-          </li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Вопросы</h3>
-          <button class="container__button">
-            <img
-              src="./assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Вопросы</h3>
+            <button class="container__button">
+              <img
+                src="./assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li><a class="container__link" href="/">Часто задаваемые</a></li>
+            <li><a class="container__link" href="/">Тарифы</a></li>
+            <li><a class="container__link" href="/">Акции</a></li>
+            <li><a class="container__link" href="/">Поддержка</a></li>
+            <li><a class="container__link" href="/">Отзывы клиентов</a></li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li><a class="container__link" href="/">Часто задаваемые</a></li>
-          <li><a class="container__link" href="/">Тарифы</a></li>
-          <li><a class="container__link" href="/">Акции</a></li>
-          <li><a class="container__link" href="/">Поддержка</a></li>
-          <li><a class="container__link" href="/">Отзывы клиентов</a></li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Контакты</h3>
-          <button class="container__button">
-            <img
-              src="./assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Контакты</h3>
+            <button class="container__button">
+              <img
+                src="./assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li>
+              <a
+                class="container__link container-contact"
+                href="tel:08008675637"
+                >0 800 867 56 37</a
+              >
+              <p class="container__text">
+                Специалисты нашего колл-центра готовы помочь вам с с 6:00 до
+                20:00
+              </p>
+            </li>
+            <li>
+              <a
+                class="container__link container-contact"
+                href="mailto:info@hope.group"
+                >info@hope.group</a
+              >
+            </li>
+            <li>
+              <ul class="social-desktop">
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="./assets/icons.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="./assets/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="./assets/icons.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="container__adress-title">Адрес</p>
+              <p class="container__adress">
+                00601, г. Киев, Улица Твоеймамы, 66, офис 000
+              </p>
+            </li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li>
-            <a class="container__link" href="tel:08008675637"
-              >0 800 867 56 37</a
-            >
-            <p class="container__text">
-              Специалисты нашего колл-центра готовы помочь вам с с 6:00 до 20:00
-            </p>
-          </li>
-          <li>
-            <a class="container__link" href="mailto:info@hope.group"
-              >info@hope.group</a
-            >
-          </li>
-          <li>
-            <p class="container__text">Адрес</p>
-            <p class="container__text">
-              00601, г. Киев, Улица Твоеймамы, 66, офис 000
-            </p>
-          </li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Документация</h3>
-          <button class="container__button">
-            <img
-              src="./assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Документация</h3>
+            <button class="container__button">
+              <img
+                src="./assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li><a class="container__link" href="/">Условия договора</a></li>
+            <li>
+              <a class="container__link" href="/"
+                >Политика конфиденциальности персональных данных</a
+              >
+            </li>
+            <li>
+              <a class="container__link" href="/">Условия реструктуризации</a>
+            </li>
+            <li><a class="container__link" href="/">Образцы заявлений</a></li>
+            <li><a class="container__link" href="/">Реквизиты</a></li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li><a class="container__link" href="/">Условия договора</a></li>
-          <li>
-            <a class="container__link" href="/"
-              >Политика конфиденциальности персональных данных</a
-            >
-          </li>
-          <li>
-            <a class="container__link" href="/">Условия реструктуризации</a>
-          </li>
-          <li><a class="container__link" href="/">Образцы заявлений</a></li>
-          <li><a class="container__link" href="/">Реквизиты</a></li>
-        </ul>
       </div>
     </footer>
   </body>

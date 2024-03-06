@@ -32,12 +32,26 @@
             <span class="burger__line"></span>
           </button>
         </div>
+        <nav>
+          <ul class="nav__list">
+            <li><a href="../../investPage.html">Invest</a></li>
+            <li><a href="../../creditPage.html">Credit</a></li>
+            <li><a href="./creditTerms.html">Support</a></li>
+            <li><a href="./aboutUs.html">About</a></li>
+            <li><a href="/partials/LoginMobile/mainLogin.html">Sign up</a></li>
+            <li>
+              <a class="signup" href="/partials/LoginMobile/mainLogin.html"
+                >Sign up</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
-      <div class="wrapper main">
-        <section class="take">
-          <h2 class="take__title">Як взяти кредит в <span>HopeGroup?</span></h2>
+      <section class="take">
+        <h2 class="take__title">Як взяти кредит в <span>HopeGroup?</span></h2>
+        <div class="take__container">
           <ul class="take__list">
             <li>
               <div class="take__list-block">
@@ -100,10 +114,11 @@
               </p>
             </li>
           </ul>
-          <div class="calculate">
-            <div class="slidecontainer take__calculate">
+          <div class="calculate take__calculate">
+            <h3 class="take__calculate-title">Перша позика під 0%</h3>
+            <div class="slidecontainer take__calculate take__slide">
               <div>
-                <p class="slide__label">Сумма</p>
+                <p class="slide__label">Сума</p>
                 <p class="slide__sum">50 000₴</p>
               </div>
               <input type="range" min="1" max="100" value="20" class="slider" />
@@ -112,33 +127,32 @@
                 <p class="amount">100 000₴</p>
               </div>
             </div>
-            <div class="slidecontainer take__calculate">
+            <div class="slidecontainer take__calculate take__slide">
               <div>
-                <p class="slide__label">Период</p>
+                <p class="slide__label">Період</p>
                 <p class="slide__sum">3 000₴</p>
               </div>
               <input type="range" min="1" max="100" value="20" class="slider" />
               <div class="div">
-                <p class="amount">10 дней</p>
-                <p class="amount">24 недели</p>
+                <p class="amount">10 днів</p>
+                <p class="amount">24 тижні</p>
               </div>
             </div>
             <div class="calculate__result take__calculate--result">
-              <p class="result__label">Вы возвращаете:</p>
-              <p class="result__label">До(включительно):</p>
-
+              <p class="result__label">Ви повертаєте:</p>
+              <p class="result__label">До(включно):</p>
               <p class="result__amount">50 000</p>
               <p class="result__amount">15/01/2024</p>
             </div>
             <button class="calculate__btn take__calculate--btn">
-              Получить деньги
+              Отримати гроші
             </button>
             <button class="take__promocode">В мене є промокод</button>
             <button class="calculate__programm-btn take__programm-btn">
-              График начислений
+              Графік нарахувань
             </button>
             <button class="calculate__programm-btn take__programm-btn">
-              Полные условия
+              Повні умови
             </button>
             <p class="take__text">
               Додатково перелік кредитних продуктів Товариства, їхні істотні
@@ -148,12 +162,12 @@
               <a href="/">Кредитні продукти</a>
             </p>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="wrapper bottom">
-        <div class="container">
+      <div class="wrapper-bottom">
+        <div class="container footer__logo">
           <a class="logo" href="/">
             <img
               src="../../assets/Logo-white.png"
@@ -167,109 +181,144 @@
             <li>
               <a class="social__link" href="/">
                 <svg class="social__icon" width="43" height="29">
-                  <use href="../..//assets/icons.svg#telegram"></use>
+                  <use href="../../assets/icons.svg#telegram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social__link" href="/">
                 <svg class="social__icon" width="43" height="29">
-                  <use href="../..//assets/icons.svg#instagram"></use>
+                  <use href="../../assets/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a class="social__link" href="/">
                 <svg class="social__icon" width="43" height="29">
-                  <use href="../..//assets/icons.svg#youtube"></use>
+                  <use href="../../assets/icons.svg#youtube"></use>
                 </svg>
               </a>
             </li>
           </ul>
+          <ul class="help">
+            <li>
+              <a href="" class="help__link">Скарга? Вам сюди!</a>
+            </li>
+            <li><a href="" class="help__link">Повідомити про шахрайство</a></li>
+            <li>
+              <a href="" class="help__link">Бракує грошей на оплату кредиту</a>
+            </li>
+          </ul>
         </div>
-        <ul class="help">
-          <li>
-            <a href="" class="help__link">Жалоба? Вам сюда!</a>
-          </li>
-          <li><a href="" class="help__link">Сообщить о мошенничестве</a></li>
-          <li>
-            <a href="" class="help__link">Не хватает денег на оплату кредита</a>
-          </li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Вопросы</h3>
-          <button class="container__button">
-            <img
-              src="../..//assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Питання</h3>
+            <button class="container__button">
+              <img
+                src="../../assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li><a class="container__link" href="/">Часто задаваемые</a></li>
+            <li><a class="container__link" href="/">Тарифи</a></li>
+            <li><a class="container__link" href="/">Акції</a></li>
+            <li><a class="container__link" href="/">Підтримка</a></li>
+            <li><a class="container__link" href="/">Відгуки клієнтів</a></li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li><a class="container__link" href="/">Часто задаваемые</a></li>
-          <li><a class="container__link" href="/">Тарифы</a></li>
-          <li><a class="container__link" href="/">Акции</a></li>
-          <li><a class="container__link" href="/">Поддержка</a></li>
-          <li><a class="container__link" href="/">Отзывы клиентов</a></li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Контакты</h3>
-          <button class="container__button">
-            <img
-              src="../..//assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Контакти</h3>
+            <button class="container__button">
+              <img
+                src="../../assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li>
+              <a
+                class="container__link container-contact"
+                href="tel:08008675637"
+                >0 800 867 56 37</a
+              >
+              <p class="container__text">
+                Фахівці нашого колл-центру готові допомогти вам з 6:00 до 20:00
+              </p>
+            </li>
+            <li>
+              <a
+                class="container__link container-contact"
+                href="mailto:info@hope.group"
+                >info@hope.group</a
+              >
+            </li>
+            <li>
+              <ul class="social-desktop">
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="../../assets/icons.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="../../assets/icons.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="social__link" href="/">
+                    <svg class="social__icon" width="43" height="29">
+                      <use href="../../assets/icons.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p class="container__adress-title">Адреса</p>
+              <p class="container__adress">
+                00601, г. Київ, вул. Твоеймамы, 66, офис 000
+              </p>
+            </li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li>
-            <a class="container__link" href="tel:08008675637"
-              >0 800 867 56 37</a
-            >
-            <p class="container__text">
-              Специалисты нашего колл-центра готовы помочь вам с с 6:00 до 20:00
-            </p>
-          </li>
-          <li>
-            <a class="container__link" href="mailto:info@hope.group"
-              >info@hope.group</a
-            >
-          </li>
-          <li>
-            <p class="container__text">Адрес</p>
-            <p class="container__text">
-              00601, г. Киев, Улица Твоеймамы, 66, офис 000
-            </p>
-          </li>
-        </ul>
         <div class="container">
-          <h3 class="container__title">Документация</h3>
-          <button class="container__button">
-            <img
-              src="../..//assets/btn-line.png"
-              alt="line"
-              width="20"
-              height="15"
-            />
-          </button>
+          <div>
+            <h3 class="container__title">Документація</h3>
+            <button class="container__button">
+              <img
+                src="../../assets/btn-line.png"
+                alt="line"
+                width="20"
+                height="15"
+              />
+            </button>
+          </div>
+          <ul class="container__list">
+            <li><a class="container__link" href="/">Умови договору</a></li>
+            <li>
+              <a class="container__link" href="/"
+                >Політика конфіденційності персональних даних</a
+              >
+            </li>
+            <li>
+              <a class="container__link" href="/">Умови реструктуризації</a>
+            </li>
+            <li><a class="container__link" href="/">Зразки заяв</a></li>
+            <li><a class="container__link" href="/">Реквізити</a></li>
+          </ul>
         </div>
-        <ul class="container__list">
-          <li><a class="container__link" href="/">Условия договора</a></li>
-          <li>
-            <a class="container__link" href="/"
-              >Политика конфиденциальности персональных данных</a
-            >
-          </li>
-          <li>
-            <a class="container__link" href="/">Условия реструктуризации</a>
-          </li>
-          <li><a class="container__link" href="/">Образцы заявлений</a></li>
-          <li><a class="container__link" href="/">Реквизиты</a></li>
-        </ul>
       </div>
     </footer>
   </body>
