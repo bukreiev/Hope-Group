@@ -1,6 +1,6 @@
 .auth {
   display: block;
-  padding: 50px 0;
+  padding: 50px 20px;
   max-width: 480px;
   margin: 0 auto;
 }
@@ -139,10 +139,4 @@
 
 .checkbox__text {
   font-weight: 600;
-}
-
-@media (min-width: 1024px) {
-  .form__bank input {
-    max-width: 235px;
-  }
 }
